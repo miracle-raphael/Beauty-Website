@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miracle Ralph" />
+    <meta name="description" content="A modern Beauty website" />
+    <title>Elegant Beauty</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Your external Tailwind configuration -->
+    <script src="./tailwindcss config.js"></script>
+    <script src="script1.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Permanent+Marker&family=Poppins:wght@400;500;600;700&family=Great+Vibes&family=Allura&family=Pinyon+Script&family=Sacramento&family=Pacifico&family=Lobster&family=Yellowtail&family=Kaushan+Script&family=Oleo+Script&family=Damion&family=Anton&family=Alfa+Slab+One&family=Bungee&family=UnifrakturCook:wght@700&family=Pirata+One&family=Poiret+One&family=Tilt+Neon&family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[hsl(350,80%,90%)]">
+    <header
+      class="relative min-h-screen max-sm:min-h-[400px] overflow-hidden bg-black text-white"
+    >
+      <video
+        class="clip absolute inset-0 w-full h-full max-sm:h-[400px] object-cover opacity-100 transition-opacity duration-1000"
+        src="video/kling_20261027_VIDEO_The_hands_1296_0 (online-video-cutter.com) (1).mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+
+        
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative flex justify-between px-18 max-sm:px-8 items-center">
+        <div class="font-signature text-2xl">
+          <h2>Elegant</h2>
+          <p>Beauty</p>
+        </div>
+
+    
+        <nav id="menu"
+          class="hidden absolute right-6 top-full z-20 mt-2 flex flex-col gap-4 rounded-xl bg-black/80 p-6 backdrop-blur-md sm:static sm:z-10 sm:mt-0 sm:flex sm:flex-row sm:items-center sm:gap-6 sm:bg-transparent sm:p-0 sm:backdrop-blur-none" aria-label="main"
+        >
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <a href="Booking.html" class="hidden rounded-full border border-white/40 px-5 py-2 font-semibold transition hover:bg-white hover:text-black sm:block">Book Now</a>
+
+
+         <button
+    id="menuBtn"
+    class="group relative h-10 w-10 rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-[hsl(14,100%,82%)] sm:hidden"
+    aria-expanded="false"
+    aria-controls="mobileMenu"
+    aria-label="Open menu"
+  >
+    <span class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 -translate-y-[7px] rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:translate-y-0 group-aria-expanded:rotate-45"></span>
+    <span class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:scale-x-0 group-aria-expanded:opacity-0"></span>
+    <span class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 translate-y-[7px] rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:translate-y-0 group-aria-expanded:-rotate-45"></span>
+  </button>
+        
+      </div>
+
+
+      <!----Mobile Menu-->
+
+       <div id="mobileMenu" class="invisible fixed inset-0 z-40 sm:hidden" aria-hidden="true">
+  <div id="backdrop" class="absolute inset-0 bg-black/60 opacity-0 backdrop-blur-sm transition-opacity duration-300"></div>
+
+  <nav id="drawer" class="absolute right-0 top-0 flex h-full w-4/5 max-w-xs translate-x-full flex-col bg-[hsl(0,0%,4%)] px-8 pb-10 pt-28 transition-transform duration-300 motion-reduce:transition-none" aria-label="Mobile">
+    <a href="#home" class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]">Home</a>
+    <a href="#services" class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]">Services</a>
+    <a href="#about" class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]">About</a>
+
+    
+      <a href="Booking.html" class=" rounded-full border border-white/40 px-5 py-2 mt-4 font-semibold transition hover:bg-white hover:text-black sm:hidden">Book Now</a>
+</nav>
+      </div>
+
+      <section
+        class="absolute z-10 bottom-1/2 left-1/2 -translate-x-1/2 sm:translate-y-1/2 max-sm:translate-y-1/5 lg:translate-y-1/2"
+      >
+        <h1
+          class="font-heading text-2xl max-sm:text-[16px] sm:text-4xl lg:text-5xl leading-tight text-center uppercase"
+        >
+          <span class="block text-[hsl(20,100%,75%)]">Where elegance</span>
+          <span class="block text-[hsl(20,100%,75%)]"
+            >meets your fingertips</span
+          >
+        </h1>
+
+        <p
+          class="max-sm:text-[10px] lg:text-lg max-sm:font-medium mt-4 text-center text-[hsl(28,100%,86%)]"
+        >
+          Flawless nails, a calm setting and care in every detail. Book your
+          manicure or pedicure with Elegant Beauty today.
+        </p>
+      </section>
+      <div
+        class="absolute z-10 bottom-1/3 left-1/2 -translate-x-1/2 lg:translate-y-16 sm:translate-y-16 max-sm:-translate-y-1 max-sm:text-[10px] text-sm uppercase"
+      >
+        <a
+          href="Booking.html"
+          class="inline-block rounded-xl bg-[hsl(14,100%,82%)] px-3 py-4 font-semibold text-black shadow-[0_0_25px_hsl(14,100%,82%,0.45)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_40px_hsl(14,100%,82%,0.8)]"
+        >
+          Book Your Experience
+        </a>
+      </div>
+    </header>
+
+    <main class="max-sm:mx-8">
+      <section
+        id="services"
+        class="flex max-sm:flex-col sm:items-center justify-between"
+      >
+        <div class="p-4 mt-8">
+          <p class="font-anton text-sm uppercase">More Than Nails</p>
+          <h2
+            class="mt-2 uppercase text-5xl sm:text-3.2xl max-sm:text-5xl font-bungee"
+          >
+            It's an experience
+          </h2>
+          <div class="border-b border-black/50 w-20 mt-2"></div>
+          <p class="text-sm mt-2 max-w-[350px]">
+            From timeless classics to bold statements,we create looks that are
+            as unique as you are.
+          </p>
+          <a
+            href="Booking.html"
+            class="inline-block rounded-xl bg-[hsl(350,70%,55%)] px-8 py-4 mt-6 font-semibold text-white shadow-[0_8px_30px_hsl(350,70%,55%,0.45)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_hsl(350,70%,55%,0.7)]"
+          >
+            Explore Services
+          </a>
+        </div>
+
+        <!---Grid photos------>
+        <div
+          class="grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-4 max-sm:grid-cols-1 gap-2 mt-4 max-sm:p-4 max-sm:gap-4 lg:px-2 sm:mx-4"
+        >
+          <!---MANICURE SEC---->
+          <div class="bg-white/50 rounded-lg max-w-[500px]">
+            <div class="relative">
+              <img
+                src="image/manicure.jpg"
+                class="w-full max-w-[650px] max-h-[259px] max-sm:max-h-[450px] rounded-lg"
+                alt="Manicure"
+              />
+
+              <div
+                class="bg-[hsl(350,80%,90%)] w-8 h-8 grid place-items-center rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
+              >
+                <i class="fa-solid fa-hand-sparkles"></i>
+              </div>
+            </div>
+            <h4 class="mt-6 px-4 font-semibold text-xl font-dm">Manicure</h4>
+            <p class="text-[12px] px-4 max-w-[200px] mt-2">
+              Classic manicure for healthy, beautiful nails.
+            </p>
+          </div>
+
+          <!----PEDICURE SEC---->
+
+          <div
+            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] sm:min-h-[188px]"
+          >
+            <div class="relative">
+              <img
+                src="image/pedicure.jpg"
+                class="w-full max-w-[650px] max-h-[259px] max-sm:max-h-[450px] rounded-lg"
+                alt=""
+              />
+              <div
+                class="bg-[hsl(350,80%,90%)] w-8 h-8 grid place-items-center rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
+              >
+                <i class="fa-solid fa-shoe-prints"></i>
+              </div>
+            </div>
+            <h4 class="mt-6 px-4 text-xl font-semibold font-dm">Pedicure</h4>
+            <p class="text-[12px] px-4 max-w-[200px] mt-2">
+              Relaxing pedicure for soft, happy feet
+            </p>
+          </div>
+
+          <!---Nail Art---->
+
+          <div class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px]">
+            <div class="relative">
+              <img
+                src="image/Nail.jpg"
+                class="w-full max-w-[650px] max-h-[252px] max-sm:max-h-[450px] rounded-lg"
+                alt="Nail Art"
+              />
+              <div
+                class="bg-[hsl(350,80%,90%)] w-8 h-8 grid place-items-center rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
+              >
+                <i class="fa-solid fa-fill-drip"></i>
+              </div>
+            </div>
+            <h4 class="mt-6 px-4 max-sm:text-xl font-semibold font-dm">
+              Nail Art
+            </h4>
+            <p class="text-[12px] px-4 max-w-[200px] mt-2">
+              Custom designs to express your style.
+            </p>
+          </div>
+
+          <!----EYELASH EXTENSION---->
+
+          <div
+            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] max-sm:min-h-[480px]"
+          >
+            <div class="relative">
+              <img
+                src="image/Eyelash.jpg"
+                class="w-full lg:max-w-[650px] max-h-[208px] max-sm:max-h-[500px] rounded-lg"
+                alt="Eyelash Extension"
+              />
+
+              <div
+                class="bg-[hsl(350,80%,90%)] w-8 h-8 grid place-items-center rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
+              >
+                <i class="fa-solid fa-feather-pointed"></i>
+              </div>
+            </div>
+            <h4
+              class="mt-6 px-4 max-sm:text-xl sm:text-sm font-semibold font-dm"
+            >
+              Eyelash Extension
+            </h4>
+            <p class="text-[12px] px-4 max-w-[200px] mt-2">
+              Custom designs to express your style.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-6 gap-[15%]"
+      >
+        <figure class="relative overflow-hidden max-sm:order-2">
+          <img
+            src="image/Salon.jpg"
+            class="w-full max-w-[680px] max-h-[450px] mt-4 px-2 rounded-xl"
+            alt="Beauty salon"
+          />
+          
+
+          <!-- Left fade -->
+          <div
+            class="absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-[hsl(350,80%,90%)] to-transparent"
+          ></div>
+
+          <!-- Right fade -->
+          <div
+            class="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[hsl(350,80%,90%)] to-transparent"
+          ></div>
+
+          <!-- Top fade -->
+          <div
+            class="absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[hsl(350,80%,90%)] to-transparent"
+          ></div>
+        </figure>
+
+        <div class="mt-8 max-sm:order-1 max-sm:p-4">
+          <p class="font-anton text-sm uppercase">
+            Because you deserve the best
+          </p>
+          <h2 class="text-6xl sm:text-5xl font-bungee tracking-tight mt-4">
+            Book your moment
+          </h2>
+          <div class="border-b border-black/50 w-20 mt-2"></div>
+          <p class="mt-4 lg:max-w-[360px] tracking-tight">
+            Indulge in a space of beauty, luxury and relaxation. Your perfect
+            nail and eyelash extension are just one appointment away.
+          </p>
+
+          <a
+            href="Booking.html"
+            class="inline-block rounded-xl bg-[hsl(350,70%,55%)] mt-2 px-8 py-4 font-semibold text-white shadow-[0_8px_30px_hsl(350,70%,55%,0.45)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_hsl(350,70%,55%,0.7)]"
+          >
+            Book now
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="bg-black min-h-[100px] overflow-hidden rounded-lg flex max-sm:flex-col justify-between items-center relative text-[hsl(27,38%,68%)] mt-2"
+      >
+        <div
+          class="pointer-events-none absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-[hsl(14,100%,82%)]/15 blur-[120px]"
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-32 right-1/4 h-96 w-96 rounded-full bg-[hsl(350,60%,60%)]/15 blur-[120px]"
+        ></div>
+        <div class="m-auto max-sm:mt-4">
+          <p class="text-[hsl(14,100%,82%)]/70">New Client Special</p>
+          <h3
+            class="uppercase font-bold text-5xl font-bebas max-w-[220px] mt-2"
+          >
+            20% off your on first visit!
+          </h3>
+          <p class="text-white text-[15px]">
+            Treat yourself to bautiful nails.
+          </p>
+          <p class="text-white text-[15px]">You deserve it!</p>
+          <a
+            href="Booking.html"
+            class="inline-block rounded-xl bg-[hsl(14,100%,82%)] px-8 py-4 mt-2 font-semibold text-black shadow-[0_0_25px_hsl(14,100%,82%,0.45)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_40px_hsl(14,100%,82%,0.8)]"
+          >
+            Book now
+          </a>
+        </div>
+
+        <div class="relative max-sm:mt-8">
+          <img
+            src="image/Beauty.jpg"
+            class="max-h-[300px] object-cover"
+            alt="image"
+          />
+          <div
+            class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[hsl(0,0%,2%)] to-transparent"
+          ></div>
+
+          <!-- fade the left side too -->
+          <div
+            class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[hsl(0,0%,2%)] to-transparent"
+          ></div>
+        </div>
+      </section>
+
+      <!----ABOUT SECTION---->
+
+      <section id="about" class="text-center mt-4">
+        <p class="text-xs uppercase tracking-[0.35em] text-[hsl(12,42%,19%)]">
+          About Us
+        </p>
+
+        <h2 class="mt-4 text-4xl leading-tight lg:text-5xl">
+          <span class="font-['Playfair_Display'] block">Beauty, done with</span>
+          <span
+            class="font-['Great_Vibes'] block text-5xl text-[hsl(12,42%,19%)] lg:text-6xl"
+            >care and confidence</span
+          >
+        </h2>
+
+        <div class="flex max-sm:flex-col justify-evenly items-center">
+          <img
+            src="image/Technician.jpg"
+            class="max-h-[400px] rounded-lg mt-4 max-sm:order-2"
+            alt=""
+          />
+
+          <div
+            class="max-w-[500px] sm:max-w-[400px] max-sm:m-6 text-left max-sm:order-1"
+          >
+            <p class="font-heading font-semibold leading-tight">
+              Elegant Beauty is a [Lagos-based] nail and beauty studio created
+              for women who love looking polished without the stress. From the
+              moment you walk in, you are welcomed into a calm, clean space
+              where every detail is made for you.
+            </p>
+
+            <p class="font-heading font-semibold leading-tight mt-4">
+              We specialise in manicures, pedicures, nail art and eyelash
+              extensions, using premium products and careful technique. Our nail
+              technicians are trained to listen first, so your nails and lashes
+              turn out the way you pictured them. Because we believe beauty is
+              confidence, not perfection.
+            </p>
+
+            <div class="flex gap-6 mt-4">
+              <div class="mt-4">
+                <p
+                  class="flex flex-col max-w-[100px] font-semibold font-dm text-sm tracking-tight text-center"
+                >
+                  <i
+                    class="fa-regular fa-gem text-2xl grid place-items-center text-[hsl(358,47%,16%)]"
+                  ></i
+                  >Premium Product
+                </p>
+              </div>
+
+              <div class="mt-4 flex flex-col">
+                <svg
+                  class="text-[hsl(358,47%,16%)] w-6 h-6 m-auto font-bold text-xl"
+                  viewBox="0 0 24 24"
+                  class="h-8 w-8 text-[hsl(14,100%,82%)]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"
+                  />
+                </svg>
+                <p
+                  class="max-w-[106px] font-semibold font-dm text-sm tracking-tight text-center"
+                >
+                  Highly Trained Techs
+                </p>
+              </div>
+
+              <div class="mt-4">
+                <p
+                  class="flex flex-col max-w-[100px] font-semibold font-dm text-sm tracking-tight text-center"
+                >
+                  <i
+                    class="fa-regular fa-star text-2xl grid place-items-center text-[hsl(358,47%,16%)]"
+                  ></i>
+                  Luxury Experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="border-b border-gray mt-2"></div>
+      <section class="text-center">
+        <p
+          class="text-xs uppercase tracking-[0.35em] text-[hsl(12,42%,19%)] mt-4"
+        >
+          What Our Client Say
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

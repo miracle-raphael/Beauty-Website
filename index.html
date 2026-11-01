@@ -38,59 +38,92 @@
         playsinline
       ></video>
 
-        
-      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="absolute inset-0 bg-black/50"></div>
 
       <div class="relative flex justify-between px-18 max-sm:px-8 items-center">
-        <div class="font-signature text-2xl">
+        <div class="font-signature text-2xl py-4">
           <h2>Elegant</h2>
           <p>Beauty</p>
         </div>
 
-    
-        <nav id="menu"
-          class="hidden absolute right-6 top-full z-20 mt-2 flex flex-col gap-4 rounded-xl bg-black/80 p-6 backdrop-blur-md sm:static sm:z-10 sm:mt-0 sm:flex sm:flex-row sm:items-center sm:gap-6 sm:bg-transparent sm:p-0 sm:backdrop-blur-none" aria-label="main"
+        <nav
+          id="menu"
+          class="hidden absolute right-6 top-full z-20 mt-2 flex flex-col gap-4 rounded-xl bg-black/80 p-6 backdrop-blur-md sm:static sm:z-10 sm:mt-0 sm:flex sm:flex-row sm:items-center sm:gap-6 sm:bg-transparent sm:p-0 sm:backdrop-blur-none"
+          aria-label="main"
         >
           <a href="#home">Home</a>
           <a href="#services">Services</a>
           <a href="#about">About</a>
         </nav>
 
-        <a href="Booking.html" class="hidden rounded-full border border-white/40 px-5 py-2 font-semibold transition hover:bg-white hover:text-black sm:block">Book Now</a>
+        <a
+          href="Booking.html"
+          class="hidden rounded-full border border-white/40 px-5 py-2 font-semibold transition hover:bg-white hover:text-black sm:block"
+          >Book Now</a
+        >
 
-
-         <button
-    id="menuBtn"
-    class="group relative h-10 w-10 rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-[hsl(14,100%,82%)] sm:hidden"
-    aria-expanded="false"
-    aria-controls="mobileMenu"
-    aria-label="Open menu"
-  >
-    <span class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 -translate-y-[7px] rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:translate-y-0 group-aria-expanded:rotate-45"></span>
-    <span class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:scale-x-0 group-aria-expanded:opacity-0"></span>
-    <span class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 translate-y-[7px] rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:translate-y-0 group-aria-expanded:-rotate-45"></span>
-  </button>
-        
+        <button
+          id="menuBtn"
+          class="group relative h-10 w-10 rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-[hsl(14,100%,82%)] sm:hidden"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <span
+            class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 -translate-y-[7px] rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:translate-y-0 group-aria-expanded:rotate-45"
+          ></span>
+          <span
+            class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:scale-x-0 group-aria-expanded:opacity-0"
+          ></span>
+          <span
+            class="absolute left-2 top-1/2 -mt-px h-0.5 w-6 translate-y-[7px] rounded-full bg-white transition-all duration-300 motion-reduce:transition-none group-aria-expanded:translate-y-0 group-aria-expanded:-rotate-45"
+          ></span>
+        </button>
       </div>
-
 
       <!----Mobile Menu-->
 
-       <div id="mobileMenu" class="invisible fixed inset-0 z-40 sm:hidden" aria-hidden="true">
-  <div id="backdrop" class="absolute inset-0 bg-black/60 opacity-0 backdrop-blur-sm transition-opacity duration-300"></div>
+      <div
+        id="mobileMenu"
+        class="invisible fixed inset-0 z-40 sm:hidden"
+        aria-hidden="true"
+      >
+        <div
+          id="backdrop"
+          class="absolute inset-0 bg-black/60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+        ></div>
 
-  <nav id="drawer" class="absolute right-0 top-0 flex h-full w-4/5 max-w-xs translate-x-full flex-col bg-[hsl(0,0%,4%)] px-8 pb-10 pt-28 transition-transform duration-300 motion-reduce:transition-none" aria-label="Mobile">
-    <a href="#home" class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]">Home</a>
-    <a href="#services" class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]">Services</a>
-    <a href="#about" class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]">About</a>
+        <nav
+          id="drawer"
+          class="absolute right-0 top-0 flex h-full w-4/5 max-w-xs translate-x-full flex-col bg-[hsl(0,0%,4%)] px-8 pb-10 pt-28 transition-transform duration-300 motion-reduce:transition-none"
+          aria-label="Mobile"
+        >
+          <a
+            href="#home"
+            class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]"
+            >Home</a
+          >
+          <a
+            href="#services"
+            class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]"
+            >Services</a
+          >
+          <a
+            href="#about"
+            class="border-b border-white/10 py-4 text-lg transition hover:text-[hsl(14,100%,82%)]"
+            >About</a
+          >
 
-    
-      <a href="Booking.html" class=" rounded-full border border-white/40 px-5 py-2 mt-4 font-semibold transition hover:bg-white hover:text-black sm:hidden">Book Now</a>
-</nav>
+          <a
+            href="Booking.html"
+            class="rounded-full border border-white/40 px-5 py-2 mt-4 font-semibold transition hover:bg-white hover:text-black sm:hidden"
+            >Book Now</a
+          >
+        </nav>
       </div>
 
       <section
-        class="absolute z-10 bottom-1/2 left-1/2 -translate-x-1/2 sm:translate-y-1/2 max-sm:translate-y-1/5 lg:translate-y-1/2"
+        class="absolute z-10 bottom-1/2 left-1/2 -translate-x-1/2 sm:translate-y-1/2 max-sm:translate-y-1/3 lg:translate-y-1/2"
       >
         <h1
           class="font-heading text-2xl max-sm:text-[16px] sm:text-4xl lg:text-5xl leading-tight text-center uppercase"
@@ -109,7 +142,7 @@
         </p>
       </section>
       <div
-        class="absolute z-10 bottom-1/3 left-1/2 -translate-x-1/2 lg:translate-y-16 sm:translate-y-16 max-sm:-translate-y-1 max-sm:text-[10px] text-sm uppercase"
+        class="absolute z-10 bottom-1/3 max-sm:bottom-1/4 left-1/2 -translate-x-1/2 lg:translate-y-16 sm:translate-y-16 max-sm:translate-y-4 max-sm:text-[10px] text-sm uppercase"
       >
         <a
           href="Booking.html"
@@ -128,7 +161,7 @@
         <div class="p-4 mt-8">
           <p class="font-anton text-sm uppercase">More Than Nails</p>
           <h2
-            class="mt-2 uppercase text-5xl sm:text-3.2xl max-sm:text-5xl font-bungee"
+            class="mt-2 uppercase lg:text-4xl sm:text-5xl max-sm:text-5xl font-bungee"
           >
             It's an experience
           </h2>
@@ -150,7 +183,7 @@
           class="grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-4 max-sm:grid-cols-1 gap-2 mt-4 max-sm:p-4 max-sm:gap-4 lg:px-2 sm:mx-4"
         >
           <!---MANICURE SEC---->
-          <div class="bg-white/50 rounded-lg max-w-[500px]">
+          <div class="bg-white/50 rounded-lg max-w-[500px] shadow-purple-glow">
             <div class="relative">
               <img
                 src="image/manicure.jpg"
@@ -173,7 +206,7 @@
           <!----PEDICURE SEC---->
 
           <div
-            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] sm:min-h-[188px]"
+            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] sm:min-h-[188px] shadow-purple-glow"
           >
             <div class="relative">
               <img
@@ -195,7 +228,9 @@
 
           <!---Nail Art---->
 
-          <div class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px]">
+          <div
+            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] shadow-purple-glow"
+          >
             <div class="relative">
               <img
                 src="image/Nail.jpg"
@@ -219,12 +254,12 @@
           <!----EYELASH EXTENSION---->
 
           <div
-            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] max-sm:min-h-[480px]"
+            class="bg-white/50 rounded-lg max-w-[500px] min-h-[358px] max-sm:min-h-[480px] shadow-purple-glow"
           >
             <div class="relative">
               <img
                 src="image/Eyelash.jpg"
-                class="w-full lg:max-w-[650px] max-h-[208px] max-sm:max-h-[500px] rounded-lg"
+                class="w-full lg:max-w-[650px] max-h-[255px] max-sm:max-h-[500px] rounded-lg"
                 alt="Eyelash Extension"
               />
 
@@ -247,7 +282,7 @@
       </section>
 
       <section
-        class="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-6 gap-[15%]"
+        class="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-6 gap-[15%] sm:mt-6"
       >
         <figure class="relative overflow-hidden max-sm:order-2">
           <img
@@ -255,7 +290,6 @@
             class="w-full max-w-[680px] max-h-[450px] mt-4 px-2 rounded-xl"
             alt="Beauty salon"
           />
-          
 
           <!-- Left fade -->
           <div
@@ -277,7 +311,9 @@
           <p class="font-anton text-sm uppercase">
             Because you deserve the best
           </p>
-          <h2 class="text-6xl sm:text-5xl font-bungee tracking-tight mt-4">
+          <h2
+            class="lg:text-6xl max-sm:text-5xl sm:text-5xl font-bungee tracking-tight mt-4"
+          >
             Book your moment
           </h2>
           <div class="border-b border-black/50 w-20 mt-2"></div>
@@ -358,7 +394,7 @@
         <div class="flex max-sm:flex-col justify-evenly items-center">
           <img
             src="image/Technician.jpg"
-            class="max-h-[400px] rounded-lg mt-4 max-sm:order-2"
+            class="max-h-[400px] rounded-lg mt-4 max-sm:order-2 shadow-floating border border-orange-800"
             alt=""
           />
 
@@ -380,7 +416,7 @@
               confidence, not perfection.
             </p>
 
-            <div class="flex gap-6 mt-4">
+            <div class="flex gap-8 max-sm:gap-4 mt-4">
               <div class="mt-4">
                 <p
                   class="flex flex-col max-w-[100px] font-semibold font-dm text-sm tracking-tight text-center"
@@ -429,14 +465,111 @@
           </div>
         </div>
       </section>
-      <div class="border-b border-gray mt-2"></div>
-      <section class="text-center">
-        <p
-          class="text-xs uppercase tracking-[0.35em] text-[hsl(12,42%,19%)] mt-4"
-        >
-          What Our Client Say
-        </p>
-      </section>
-    </main>
+</main>
+
+
+      <footer class="bg-[hsl(4,28%,10%)] rounded-lg border border-orange-800  max-sm:px-4 min-h-[310px] max-sm:min-h-[200px] mt-36 text-white flex max-sm:flex-col justify-around items-center max-sm:items-start">
+        <div class="mt-4 lg:px-6 sm:px-6">
+          <h2 class="font-signature text-2xl">
+            Elegant <span class="block">Beauty</span>
+          </h2>
+          <p class="text-[12px]">Beauty, booked in seconds.</p>
+
+          <div class="mt-4">
+            <h4 class="font-bold uppercase text-lg">social links</h4>
+            <div class="flex items-center gap-4 mt-2">
+              <a
+                href="https://instagram.com/yourhandle"
+                target="_blank"
+                aria-label="Instagram"
+                class="w-10 h-10 max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full border border-orange-200 text-orange-200 hover:bg-pink-400 hover:border-pink-400 hover:text-black transition"
+              >
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </a>
+
+              <a
+                href="https://tiktok.com/@yourhandle"
+                target="_blank"
+                aria-label="TikTok"
+                class="w-10 h-10 max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full border border-orange-200 text-orange-200 hover:bg-pink-400 hover:border-pink-400 hover:text-black transition"
+              >
+                <i class="fa-brands fa-tiktok text-lg"></i>
+              </a>
+
+              <a
+                href="https://wa.me/2349043590554"
+                target="_blank"
+                aria-label="WhatsApp"
+                class="w-10 h-10 max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full border border-orange-200 text-orange-200 hover:bg-pink-400 hover:border-pink-400 hover:text-black transition"
+              >
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </a>
+
+              <a
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                aria-label="Facebook"
+                class="w-10 h-10 max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full border border-orange-200 text-orange-200 hover:bg-pink-400 hover:border-pink-400 hover:text-black transition"
+              >
+                <i class="fa-brands fa-facebook-f text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+         <div class="mt-4">
+          <h4 class="font-bold uppercase text-lg mt-4">Services</h4>
+          <ul class="mt-2 text-lg max-sm:text-sm">
+            <li>Manicure</li>
+            <li>Pedicure</li>
+            <li>Nail Art</li>
+            <li>Eyelash Extensions</li>
+          </ul>
+         </div>
+
+        <div class="max-sm:mt-4 mb-4">
+          <h4 class="font-bold uppercase text-lg mt-4">Contact</h4>
+        <ul class="space-y-4 max-sm:space-y-2 text-sm text-orange-100 mt-2">
+         
+
+          <li class="flex items-start gap-3">
+            <span
+              class="w-10 h-10 max-sm:w-7 max-sm:h-7 shrink-0 flex items-center justify-center rounded-full border border-orange-200 text-orange-200"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <a
+              href="tel:+2348012345678"
+              class="pt-2 hover:text-pink-400 transition"
+              >+234 9043590554</a
+            >
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="w-10 h-10 max-sm:w-7 max-sm:h-7 shrink-0 flex items-center justify-center rounded-full border border-orange-200 text-orange-200"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <a
+              href="mailto:miracleraphael2005@gmail.com"
+              class="pt-2 hover:text-pink-400 transition"
+              >miracleraphael2005@gmail.com</a
+            >
+          </li>
+
+          <li class="flex items-center gap-3">
+            <span
+              class="w-10 h-10 max-sm:w-7 max-sm:h-7 shrink-0 flex items-center justify-center rounded-full border border-orange-200 text-orange-200"
+            >
+              <i class="fa-regular fa-clock"></i>
+            </span>
+            <span class="pt-2">Mon - Sat: 9:00 AM - 7:00 PM</span>
+          </li>
+        </ul>
+</div>
+      </footer>
+    
   </body>
 </html>
